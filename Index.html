@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+                sm: '480px',
+                md: '768px',
+                lg: '976px',
+                xl: '1440px',
+            },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                darkendOrange: '#ff8c00',
+                yellow: '#ffff33',
+                whiteSmoke: '#F5F5F5',
+                white: '#ffffff',
+              },
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- navigation  -->
+    <nav class="relative container mx-auto p-6">
+        <!-- flex container -->
+        <div class="flex items-center justify-between">
+            <!-- LOgo -->
+            <div class="pt-2">
+                <img src="image/LOgo.png" alt="">
+            </div>
+            <!-- menu -->
+            <div class="hidden md:flex md:space-x-6">
+                <a href="#" class="hover:text-darkendOrange pt-2">Demos</a>
+                <a href="#" class="hover:text-darkendOrange pt-2">About</a>
+                <a href="#" class="hover:text-darkendOrange pt-2">Blogs</a>
+                <a href="#" class="hover:text-darkendOrange pt-2">Pages</a>
+                <a href="#" class="hover:text-darkendOrange pt-2">Contact</a>
+            </div>     
+                <!-- button -->
+                <a href="#" id="firstBtn" class="hidden md:block  p-3 px-6 pt-2 text-white bg-darkendOrange rounded-full baseline hover:bg-clifford">Get Started Free</a>
+            
+                <!-- hamburger -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <!-- hamburger menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a class="hover:text-darkendOrange" href="#">Demos</a>
+                <a class="hover:text-darkendOrange" href="#">About</a>
+                <a class="hover:text-darkendOrange" href="#">Blogs</a>
+                <a class="hover:text-darkendOrange" href="#">Pages</a>
+                <a class="hover:text-darkendOrange" href="#">Contacts</a>
+            </div>
+        </div>
+    </nav>
+    <!-- first section -->
+    <section id="section1">
+        <!-- flex container -->
+        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-32 space-y-0 md:space-y-0">
+            <!-- left flex -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">Start chatting with customers, anytime, anywhere with Apex</h1>
+                <p class="max-w-sm text-center md:text-left">Great software that allows you to chat from any place at any time without any interruption.</p>
+                <div class="flex flex-center md:flex-start">
+                    <a href="#" class="p-3 px-5 pt-1 text-white mx-auto bg-darkendOrange rounded-full baseline hover:bg-clifford md:mx-1">Start Chatting Now<img src="image/Icon.png" alt=""></a>
+                </div>
+                <div class="flex mx-auto md:mx-2">
+                    <img src="image/Images.png" alt="">
+                    <div class="flex flex-col space-x-4">
+                        <h1 class="max-w-sm mx-8 font-bold text-4xl">2,291</h1>
+                        <p>Happy customers</p>
+                    </div>
+                    <img src="image/2.png" alt="">
+                </div>
+            </div>
+            <!-- right flex -->
+            <div class="md:1/2">
+                <img src="image/Image (2).png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- second section -->
+    <section id="section2">
+        <div class="container mx-auto">
+            <!-- the heading -->
+            <h1 class="mx-auto text-center my-6 font-bold text-2xl md:text-4xl">Features for a better experience</h1>
+            <div class="container flex flex-col justify-between px-4 py-4 mx-auto mt-6 md:flex-row md:space-y-0 md:justify-between md:px-28"> 
+                <!-- flexed boxes-->
+                <div class="flex flex-col mx-4 my-10 md:flex-row">
+                    <!-- flexed box 1 -->
+                    <div class="flex flex-col mx-4 my-6 py-4 md:flex-row md:space-x-0">
+                        <span><img class="mx-auto mb-4" src="image/icon (2).png" alt=""></span>
+                        <div class="flex flex-col mx-6">
+                            <h1 class="font-semibold text-2xl mx-auto px-6 md:ml-1">Video Messaging</h1>
+                            <p class="max-w-sm break-words mx-auto px-8">This software is very easy for you to manage. You can use it as you wish.</p>
+                        </div>
+                    </div>
+                    <!-- flexed box 2 -->
+                    <div class="flex flex-col mx-3 my-6 py-4 md:flex-row md:space-x-0">
+                        <span><img class="mx-auto mb-4" src="image/icon (1).png" alt=""></span>
+                        <div class="flex flex-col mx-6">
+                            <h1 class="font-semibold text-2xl mx-auto px-6 md:ml-2">Save your time</h1>
+                            <p class="max-w-sm break-words mx-auto px-8">This software is very easy for you to manage. You can use it as you wish.</p>
+                        </div>
+                    </div>
+                    <!-- flexed box 3 -->
+                    <div class="flex flex-col mx-4 my-6 py-4 md:flex-row md:space-x-0">
+                        <span><img class="mx-auto mb-4" src="image/icon-11.png" alt=""></span>
+                        <div class="flex flex-col mx-6">
+                            <h1 class="font-semibold text-2xl mx-auto px-6 md:ml-1">Keep Safe & Private</h1>
+                            <p class="max-w-sm break-words mx-auto px-6">This software is very easy for you to manage. You can use it as you wish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- third section -->
+    <section class="bg-whiteSmoke" id="section3">
+        <div class="flex flex-col px-4 py-4 mx-auto mt-10 space-y-12 md:flex-row md:space-y-0 md:px-28">
+            <!-- flex image -->
+            <div class="md:w-1/2">
+                <img src="image/Image (1).png" alt="">
+            </div>
+            <!-- flex text -->
+            <div class="flex flex-col px-4 space-y-8 md:space-y-0 md:px-0">
+                <h1 class="max-w-sm px-6 font-bold text-3xl mx-auto md:mx-auto md:mt-6 md:text-left">Meet your customers, with live video chat</h1>
+                <p class="max-w-sm px-6 text-center text-xl mx-auto md:mx-auto md:pt-10 md:text-left">Proin faucibus nibh et sagittis a. Lacinia purus ac amet pellentesque aliquam enim.</p>
+                <p class="max-w-sm px-4 text-center text-lg mx-auto  md:mx-auto md:pt-10 md:text-left">Get paychecks up to two days early. Get a $20 bonus when you receive qualifying direct deposits</p>
+            </div>
+        </div>
+    </section>
+    <!-- Furth Section -->
+    <section id="section4">
+        <div class="flex flex-col-reverse px-4 py-4 mx-auto mt-10 space-y-12 md:flex-row md:space-y-0 md:justify-between md:px-28">
+            <!-- first flex -->
+                <div class=" mt-10 space-y-6 md:mt-24 md:space-y-8 md:px-6">
+                <h1 class="max-w-xl text-4xl mx-auto md:mx-auto md:mt-6 md:font-medium md:text-6xl ml-2 ">Start selling directly inside conversations</h1>
+                <p class="max-w-xl  text-xl text-start mx-auto md:mx-auto md:mt-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered all injected humour or randomised words which don't look even slightly believable.</p>
+                <div class="mt-10 relative left-28 top-8"><a  class=" p-3 px-6 pt-2 text-white bg-darkendOrange rounded-full baseline hover:bg-clifford" href="">Start chatting now</a></div>
+            </div>
+            <!-- second flex -->
+            <div>
+                <img src="image/image.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- fifth flex -->
+    <section id="section5">
+        <div class="flex flex-col px-4 py-4 mx-auto mt-10 space-y-12 md:flex-row md:space-y-0 md:justify-between md:px-28">
+            <!-- first flex -->
+            <div>
+                <img src="image/Group 330.png" alt="">
+            </div>
+            <!-- second flex -->
+            <div class="mt-10 space-y-6 md:mt-24 md:space-y-8 md:mx-auto md:px-6">
+                <h1 class="max-w-xl text-4xl mx-auto md:mx-auto md:mt-6  md:font-medium md:text-6xl">Get direct orders from your customers</h1>
+                <p class="max-w-xl mx-auto">Create custom landing pages with Rareblocks that converts more visitors than any website. With lots of unique blocks easily build a page. There are many variations of passages of available.</p>
+                <!-- nested flex -->
+                <div class="flex space-x-36 mt-10 space-y-6 md:space-y-12 md:space-x-40 md:flex">
+                    <div class="flex">
+                        <h1 class="text-2xl font-bold md:text-2xl md:font-bold md:mt-16">4.3K+</h1>
+                        <p class="text-xl max-w-0 md:font-md md:text-md md:mt-14 md:ml-4 md:max-w-0">Website’s Powering</p>
+                    </div>
+                    <div class="flex">
+                        <h1 class="text-2xl font-bold md:text-2xl md:font-bold md:mt-4">7M+</h1>
+                        <p class="text-xl ml-0 md:font-md md:text-md md:mt-4 md:ml-4 md:max-w-s">Chats in Last 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sixth section -->
+    <section id="section6" class="relative p-6 bg-darkendOrange bg-[url(./image/shapes.png)] bg-no-repeat mx-auto">
+        <h1 class="text-center text-4xl text-white">Our blessed client said about us 😍</h1>
+        <div class="flex flex-col justify-between items-center md:flex md:flex-row">
+            <div class="flex flex-col justify-center items-center">
+                <div class="bg-white py-12 px-12 mt-6 mx-8 rounded">
+                    <h1 class="text-darkendOrange text-center">“Incredible Experience”</h1>
+                    <p class="max-w-md text-center mt-4 ">We had an incredible experience working with Mixland and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly.</p>
+                </div>
+                <div class="flex pt-6 space-x-6">
+                    <div class="">
+                        <img src="image/Photomama.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="text-white text-lg font-semibold">Wade Warren</h2>
+                        <p class="text-white text-md">CEO, ABC Corporation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div class="bg-white py-12 px-12 mt-6 mx-8 rounded">
+                    <h1 class="text-darkendOrange text-center">“Dependable, Responsive, Professional”</h1>
+                    <p class="max-w-md text-center mt-4 ">Fermin Apps has collaborated with Mixland team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. The team is always thinking beyond.</p>
+                </div>
+                <div class="flex pt-6 space-x-6">
+                    <div class="">
+                        <img src="image/Photo.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="text-white text-lg font-semibold">Esther Howard</h2>
+                        <p class="text-white text-md">CEO, ABC Corporation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="relative container mx-auto">
+        <div class=>
+            <h1 class="text-2xl font-semibold max-w-sm mx-auto text-center pt-6">Ready to grow your business? Start with Apex, become faster every second</h1>
+            <div class="mt-8 max-w-xs mx-32 mx-auto md:max-w-xs md:mx-auto"><a  class=" p-3 px-6 pt-2 text-white bg-darkendOrange rounded-md baseline hover:bg-clifford" href="">Start chatting now</a></div>
+            <div class="container flex flex-col justify-center items-center space-y-8 md:flex-row md:justify-between md:items-center px-6 mx-auto mt-32 space-y-0 md:space-y-0">
+                <div class="pt-2">
+                    <img src="image/LOgo.png" alt="">
+                </div>
+                <!-- menu -->
+                <div class="md:flex space-x-2 font-semibold">
+                    <a href="#" class="hover:text-darkendOrange pt-2">Demos</a>
+                    <a href="#" class="hover:text-darkendOrange pt-2">About</a>
+                    <a href="#" class="hover:text-darkendOrange pt-2">Blogs</a>
+                    <a href="#" class="hover:text-darkendOrange pt-2">Pages</a>
+                    <a href="#" class="hover:text-darkendOrange pt-2">Contact</a>
+                </div>
+                <div class="flex space-x-6 mt-4-8">
+                    <a href="#"><img src="image/logo-twitter 2.png" alt=""></a>
+                    <a href="#"><img src="image/logo-fb-simple 2.png" alt=""></a>
+                    <a href="#"><img src="image/logo-instagram 1.png" alt=""></a>
+                    <a href="#"><img src="image/Vector.png" alt=""></a>
+                </div>
+            </div>
+            <div class=" md:container md:mx-auto space-x-32 md:my-6 md:flex-grow md:border-t-4 md:border-darkendOrange-200"></div>
+            <div class="flex flex-col space-y-4 p-2 justify-center items-center md:flex md:flex-row md:justify-between md:items-center">
+                <div class="mt-4">
+                    <h1>&copy; Copyright 2022, All Rights Reserved</h1>
+                </div>
+                <div class="space-x-4 md:space-x-2">
+                    <a class="hover:text-darkendOrange" href="#">Privacy Policy</a>
+                    <a class="hover:text-darkendOrange" href="#">Terms & Condition</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>
